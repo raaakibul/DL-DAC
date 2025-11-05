@@ -1,7 +1,7 @@
 from speechbrain.pretrained import SpectralMaskEnhancement
 import torchaudio
 import torch
-
+import matplotlib.pyplot as plt
 #  pre-trained model
 enhancer = SpectralMaskEnhancement.from_hparams(
     source="speechbrain/mtl-mimic-voicebank",
